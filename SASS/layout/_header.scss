@@ -1,0 +1,32 @@
+body{
+    width: 100%;
+
+}
+
+.header { 
+    display: grid;
+    justify-items: center;
+    
+    .header__logo{
+    width: 50%;
+    margin:20px 0 20px 0;
+    }
+
+    &__location{
+        background-color: #EAEAEA;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        &--h2{
+            font-family:"roboto";
+            font-size: 16px;
+        }
+
+        &--dot{
+            margin: 15px 10px 15px 0;
+        }
+        
+    }
+}
+
