@@ -4,9 +4,13 @@ body {
 
 .header {
   display: grid;
-  justify-items: center;
 }
-.header .header__logo {
+.header__logo {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+  display: flex;
+  justify-content: center;
+}
+.header__logo--image {
   width: 50%;
   margin: 20px 0 20px 0;
 }
@@ -15,6 +19,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
 }
 .header__location--h2 {
   font-family: "roboto";
@@ -31,10 +36,13 @@ body {
 .explore {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   background-color: #F6F6F6;
   text-align: center;
   align-items: center;
+}
+.explore__text {
+  width: 80%;
+  margin: 20px 0 0 10px;
 }
 .explore h2 {
   margin-bottom: 0px;
@@ -55,24 +63,35 @@ body {
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2509803922);
 }
 
+.fonctionnement h2 {
+  margin: 50px 0 20px 20px;
+}
 .fonctionnement__steps {
-  display: flex;
+  display: grid;
   justify-content: center;
-  flex-direction: column;
+  grid-template-columns: 80%;
+  grid-template-rows: 90px 90px 90px;
 }
 .fonctionnement__steps--box {
   background-color: rgb(244.8, 244.8, 244.8);
-  width: 100%;
   border-radius: 20px;
   align-items: center;
   display: flex;
   margin-top: 20px;
   justify-content: space-evenly;
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1490196078);
 }
-.fonctionnement__steps--number1 {
-  position: absolute;
-  top: 250px;
-  left: 15px;
+.fonctionnement__steps--circle {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  color: white;
+  background-color: #9356DC;
+  display: flex;
+  justify-content: center;
+}
+.fonctionnement__steps--circle p {
+  margin: 0;
 }
 
 .restaurants {
@@ -85,18 +104,27 @@ body {
 .restaurants__box--link {
   text-decoration: none;
   color: #101010;
+  display: flex;
+  justify-content: center;
 }
 .restaurants__box--card {
+  width: 90%;
   border: 2px solid transparent;
   border-radius: 15px;
   margin-bottom: 20px;
   background-color: #FFFFFF;
 }
+.restaurants__box--cardtext {
+  padding: 20px;
+}
 .restaurants__box--image {
   width: 100%;
-  height: 231px;
-  border-radius: 15px;
+  height: 200px;
+  border-radius: 15px 15px 0 0;
   object-fit: cover;
+}
+.restaurants__box h3, .restaurants__box p {
+  margin: unset;
 }
 
 .footer {
