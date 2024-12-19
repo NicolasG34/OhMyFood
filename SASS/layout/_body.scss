@@ -55,18 +55,25 @@
         align-items: center;
         display: flex;
         margin-top: 20px;
-        justify-content: space-evenly;
         box-shadow: 0 4px 15px 0 #00000026;
+        position: relative;
+
+        i{
+            width: 25%;
+            text-align: center;
+            margin-left: 10px;
+        }
          }
 
         &--circle{
-            width: 24px;
-            height: 24px;
-           border-radius: 50%;
+           border-radius: 20px;
            color: white;
            background-color: #9356DC;
            display: flex;
            justify-content: center;
+           position: absolute;
+           left: -10px;
+           padding:4px 9px ;
 
            p{
             margin: 0;
@@ -124,12 +131,14 @@
 
 .footer{
     margin-top: 60px;
-    padding:30px 0 10px 0;
+    padding:10px 0 10px 0;
     background-color: #353535;
 
     &__logo{
-        width: 50%;
+        font-family: "Shrikhand",serif;
+        color: #FFFFFF;
         margin-left: 20px;
+        font-size: larger;
     }
 
     &__text{
