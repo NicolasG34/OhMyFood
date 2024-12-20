@@ -32,33 +32,33 @@
             <h2>Réservez le menu qui vous convient</h2>
             <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
         </div>
-        <a class="button" href="">Explorer nos restaurants</a>
+        <a class="explore__button" href="">Explorer nos restaurants</a>
     </div>
 
     <div class="fonctionnement">
         <h2>Fonctionnement</h2>
         <div class="fonctionnement__steps">
-            <article class="fonctionnement__steps--box">
+            <a class="fonctionnement__steps--box" href="#">
                 <span class="fonctionnement__steps--circle">
                     1
                 </span>
                 <i class="fa-solid fa-mobile-screen-button"></i>
                 <p>Choississez un restaurant</p>
-            </article>
-            <article class="fonctionnement__steps--box">
+            </a>
+            <a class="fonctionnement__steps--box" href="#">
                 <span class="fonctionnement__steps--circle">
                     2
                 </span>
                 <i class="fa-solid fa-list-ul"></i>
                 <p>Composez votre menu</p>
-            </article>
-            <article class="fonctionnement__steps--box">
+            </a>
+            <a class="fonctionnement__steps--box" href="#">
                 <span class="fonctionnement__steps--circle">
                     3
                 </span>
                 <i class="fa-solid fa-store"></i>
                 <p>Dégustez au restaurant</p>
-            </article>
+            </a>
         </div>
     </div>
 
@@ -74,6 +74,7 @@
                         <div class="restaurants__box--cardtext">
                             <h3 class="restaurants__box--cardtexttitle">La palette du Goût</h3>
                             <p class="restaurants__box--cardtextsubtitle">Ménilmontant</p>
+                            <i class="fa-regular fa-heart restaurants__box--heart"></i>
                         </div>
                     </div>
                 </article>
@@ -86,6 +87,7 @@
                         <div class="restaurants__box--cardtext">
                             <h3 class="restaurants__box--cardtexttitle">La Note enchantée</h3>
                             <p class="restaurants__box--cardtextsubtitle">Charonne</p>
+                            <i class="fa-regular fa-heart restaurants__box--heart"></i>
                         </div>
                     </div>
                 </article>
@@ -99,6 +101,7 @@
                         <div class="restaurants__box--cardtext">
                             <h3 class="restaurants__box--cardtexttitle">A la francaise</h3>
                             <p class="restaurants__box--cardtextsubtitle">Cité rouge</p>
+                            <i class="fa-regular fa-heart restaurants__box--heart"></i>
                         </div>
                     </div>
                 </article>
@@ -112,6 +115,7 @@
                         <div class="restaurants__box--cardtext">
                             <h3 class="restaurants__box--cardtexttitle">Le délice des sens</h3>
                             <p class="restaurants__box--cardtextsubtitle">Folie-méricourt</p>
+                            <i class="fa-regular fa-heart restaurants__box--heart"></i>
                         </div>
                     </div>
                 </article>
@@ -122,9 +126,15 @@
 <footer class="footer">
     <h3 class="footer__logo"> ohmyfood</h3> 
     <div class="footer__text">
-        <p>Proposer un restaurant</p>
-        <p>Devenir partenaire</p>
-        <p>Mentions légales</p>
-        <p>Contact</p>
+        <span class="footer__text--partner">
+            <i class="fa-solid fa-utensils"></i>
+            <a href="#">Proposer un restaurant</a>
+         </span>
+        <span class="footer__text--partner">
+            <i class="fa-solid fa-handshake-angle"></i>
+            <a href="#">Devenir partenaire</a>
+        </span>
+        <a href="#">Mentions légales</a>
+        <a href="#">Contact</a>
     </div>
 </footer>
