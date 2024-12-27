@@ -30,6 +30,7 @@
         animation: loader 0s 4s forwards;
         display: grid;
         place-items: center;
+        z-index:1;
     
     &__item{ 
         width: 48px;
@@ -138,31 +139,33 @@
     &__box{
 
         &--link{
-            text-decoration: none;
-            color: #101010;
-            display: flex;
-            justify-content: center;
-        }
-
-        &--card{
             width: 90%;
             border: 2px solid transparent;
             border-radius: 15px;
             margin-bottom: 20px;
             background-color: #FFFFFF;
+
+        }
+
+        &--card{
+            text-decoration: none;
+            color: #101010;
+            display: flex;
+            justify-content: center;
+            position: relative;
+        
+            i{
+                position: absolute;
+                right: 50px;
+                bottom: 60px;
+                font-size: 22px;
+                
+            }
         }
 
         &--cardtext{
             padding: 20px;
-            position: relative;
 
-            i{
-                position: absolute;
-                right: 35px;
-                top: 25px;
-                font-size: 22px;
-                
-            }
         }
         
 
@@ -178,6 +181,7 @@
         }
 
         &--heart{
+            z-index: 1;
             background:linear-gradient(#9356DC,#FF79DA);
             color: transparent;
             background-clip: text;

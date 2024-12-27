@@ -66,6 +66,7 @@ body a:hover {
   animation: loader 0s 4s forwards;
   display: grid;
   place-items: center;
+  z-index: 1;
 }
 .loader__item {
   width: 48px;
@@ -152,27 +153,27 @@ body a:hover {
   padding: 40px 0 0 20px;
 }
 .restaurants__box--link {
-  text-decoration: none;
-  color: #101010;
-  display: flex;
-  justify-content: center;
-}
-.restaurants__box--card {
   width: 90%;
   border: 2px solid transparent;
   border-radius: 15px;
   margin-bottom: 20px;
   background-color: #FFFFFF;
 }
-.restaurants__box--cardtext {
-  padding: 20px;
+.restaurants__box--card {
+  text-decoration: none;
+  color: #101010;
+  display: flex;
+  justify-content: center;
   position: relative;
 }
-.restaurants__box--cardtext i {
+.restaurants__box--card i {
   position: absolute;
-  right: 35px;
-  top: 25px;
+  right: 50px;
+  bottom: 60px;
   font-size: 22px;
+}
+.restaurants__box--cardtext {
+  padding: 20px;
 }
 .restaurants__box--image {
   width: 100%;
@@ -184,6 +185,7 @@ body a:hover {
   margin: unset;
 }
 .restaurants__box--heart {
+  z-index: 1;
   background: linear-gradient(#9356DC, #FF79DA);
   color: transparent;
   background-clip: text;
