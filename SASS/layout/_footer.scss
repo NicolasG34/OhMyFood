@@ -1,0 +1,20 @@
+.footer{
+    margin-top: 60px;
+    padding:10px 0 30px 0;
+    background-color: #353535;
+
+    &__logo{
+        font-family: "Shrikhand",serif;
+        color: #FFFFFF;
+        margin-left: 20px;
+        font-size: larger;
+    }
+
+    &__text{
+        display: flex;
+        flex-direction: column;
+        color:#FFFFFF;
+        margin-left: 20px;
+        gap:10px;
+    }
+}
