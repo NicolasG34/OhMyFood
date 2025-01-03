@@ -1,3 +1,5 @@
+@use '../abstracts/variables';
+
 .explore {
     display: flex;
     flex-direction: column;
@@ -99,8 +101,16 @@
             border-radius: 15px;
             margin-bottom: 20px;
             background-color: #FFFFFF;
+            position: relative;
 
+            &--new{
+                position: absolute;
+                top: 0;
+                right: 0;
+                color: variables.$dark-green;
+            }
         }
+
 
         i {
             position: absolute;
@@ -129,6 +139,7 @@
             font-size: 22px;
         }
     }
+
 
     &__cardcontent {
         &--cardtext {

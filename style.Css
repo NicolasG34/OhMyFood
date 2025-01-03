@@ -198,6 +198,13 @@ body a:hover {
   border-radius: 15px;
   margin-bottom: 20px;
   background-color: #FFFFFF;
+  position: relative;
+}
+.restaurants__card--link--new {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #008766;
 }
 .restaurants__card i {
   position: absolute;
