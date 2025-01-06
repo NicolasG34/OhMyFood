@@ -1,20 +1,37 @@
-.footer{
+.footer {
     margin-top: 60px;
-    padding:10px 0 30px 0;
+    padding: 10px 0 30px 0;
     background-color: #353535;
 
-    &__logo{
-        font-family: "Shrikhand",serif;
-        color: #FFFFFF;
-        margin-left: 20px;
-        font-size: larger;
-    }
+    &__text {
 
-    &__text{
         display: flex;
         flex-direction: column;
-        color:#FFFFFF;
+        color: #FFFFFF;
         margin-left: 20px;
-        gap:10px;
+        gap: 10px;
+
+        &--logo {
+            font-family: "Shrikhand", serif;
+            color: #FFFFFF;
+            margin-left: 20px;
+            font-size: larger;
+        }
+
     }
+}
+
+@media screen and (min-width: 900px) {
+
+    .footer {
+        &__text {
+            display: flex;
+            flex-direction: row-reverse;
+            padding: 50px 50px 0;
+            justify-content: right;
+            gap: 15px;
+
+        }
+    }
+
 }

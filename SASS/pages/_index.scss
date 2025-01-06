@@ -44,36 +44,43 @@
             width: 25%;
             text-align: center;
             margin-left: 10px;
+
+            &:hover {
+                color: variables.$purple;
+            }
+
         }
 
-    }
-
-    &__box {
-        background-color: darken(white, 4%);
-        border-radius: 20px;
-        align-items: center;
-        display: flex;
-        margin-top: 20px;
-        box-shadow: 0 4px 15px 0 #00000026;
-        position: relative;
-
-
-
-        &--circle {
+        &--box {
+            background-color: darken(white, 4%);
             border-radius: 20px;
-            color: white;
-            background-color: #9356DC;
+            align-items: center;
             display: flex;
-            justify-content: center;
-            position: absolute;
-            left: -10px;
-            padding: 4px 9px;
+            margin-top: 20px;
+            box-shadow: 0 4px 15px 0 #00000026;
+            position: relative;
 
-            p {
-                margin: 0;
+
+
+            &--circle {
+                border-radius: 20px;
+                color: white;
+                background-color: #9356DC;
+                display: flex;
+                justify-content: center;
+                position: absolute;
+                left: -10px;
+                padding: 4px 9px;
+
+                p {
+                    margin: 0;
+                }
             }
         }
+
     }
+
+
 
 
 
@@ -103,11 +110,19 @@
             background-color: #FFFFFF;
             position: relative;
 
-            &--new{
+            &--new {
                 position: absolute;
-                top: 0;
-                right: 0;
                 color: variables.$dark-green;
+                background-color: variables.$light-green ;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                right: 15px;
+                top: 12px;
+                width: 80px;
+                height: 30px;
+                border-radius: 2px;
             }
         }
 
@@ -132,12 +147,6 @@
             object-fit: cover;
         }
 
-        &--heart {
-            position: absolute;
-            right: 50px;
-            bottom: 60px;
-            font-size: 22px;
-        }
     }
 
 
@@ -147,5 +156,50 @@
 
         }
     }
+
+}
+
+@media screen and (min-width: 900px) {
+
+    .header__logo--image {
+        width: 15%;
+        margin: 20px 0 20px 0;
+    }
+
+    .fonctionnement {
+        margin-bottom: 60px;
+        h2 {
+            margin-left: 10%;
+        }
+
+        &__steps {
+            display: flex;
+            gap: 25px;
+
+            &--box {
+                width: 25%;
+                height: 70px;
+            }
+        }
+
+    }
+
+    .restaurants{
+
+        &__title{
+            margin-left: 8%;
+        }
+
+        &__box{
+            display:flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        &__card{
+            width: 43%;
+        }
+    }
+
 
 }

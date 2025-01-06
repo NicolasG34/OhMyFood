@@ -66,12 +66,6 @@ body a:hover {
   padding: 10px 0 30px 0;
   background-color: #353535;
 }
-.footer__logo {
-  font-family: "Shrikhand", serif;
-  color: #FFFFFF;
-  margin-left: 20px;
-  font-size: larger;
-}
 .footer__text {
   display: flex;
   flex-direction: column;
@@ -79,7 +73,22 @@ body a:hover {
   margin-left: 20px;
   gap: 10px;
 }
+.footer__text--logo {
+  font-family: "Shrikhand", serif;
+  color: #FFFFFF;
+  margin-left: 20px;
+  font-size: larger;
+}
 
+@media screen and (min-width: 900px) {
+  .footer__text {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 50px 50px 0;
+    justify-content: right;
+    gap: 15px;
+  }
+}
 @keyframes loader {
   0% {
     transform: scale(1);
@@ -155,7 +164,10 @@ body a:hover {
   text-align: center;
   margin-left: 10px;
 }
-.fonctionnement__box {
+.fonctionnement__steps i:hover {
+  color: #9356DC;
+}
+.fonctionnement__steps--box {
   background-color: rgb(244.8, 244.8, 244.8);
   border-radius: 20px;
   align-items: center;
@@ -164,7 +176,7 @@ body a:hover {
   box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1490196078);
   position: relative;
 }
-.fonctionnement__box--circle {
+.fonctionnement__steps--box--circle {
   border-radius: 20px;
   color: white;
   background-color: #9356DC;
@@ -174,7 +186,7 @@ body a:hover {
   left: -10px;
   padding: 4px 9px;
 }
-.fonctionnement__box--circle p {
+.fonctionnement__steps--box--circle p {
   margin: 0;
 }
 
@@ -202,9 +214,17 @@ body a:hover {
 }
 .restaurants__card--link--new {
   position: absolute;
-  top: 0;
-  right: 0;
   color: #008766;
+  background-color: #99E2D0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 15px;
+  top: 12px;
+  width: 80px;
+  height: 30px;
+  border-radius: 2px;
 }
 .restaurants__card i {
   position: absolute;
@@ -222,14 +242,40 @@ body a:hover {
   border-radius: 15px 15px 0 0;
   object-fit: cover;
 }
-.restaurants__card--heart {
-  position: absolute;
-  right: 50px;
-  bottom: 60px;
-  font-size: 22px;
-}
 .restaurants__cardcontent--cardtext {
   padding: 20px;
+}
+
+@media screen and (min-width: 900px) {
+  .header__logo--image {
+    width: 15%;
+    margin: 20px 0 20px 0;
+  }
+  .fonctionnement {
+    margin-bottom: 60px;
+  }
+  .fonctionnement h2 {
+    margin-left: 10%;
+  }
+  .fonctionnement__steps {
+    display: flex;
+    gap: 25px;
+  }
+  .fonctionnement__steps--box {
+    width: 25%;
+    height: 70px;
+  }
+  .restaurants__title {
+    margin-left: 8%;
+  }
+  .restaurants__box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .restaurants__card {
+    width: 43%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
