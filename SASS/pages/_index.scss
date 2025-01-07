@@ -13,7 +13,6 @@
     }
 
     &__button {
-        background: linear-gradient(#9356DC, #FF79DA);
         margin-bottom: 50px;
     }
 
@@ -89,7 +88,12 @@
 .restaurants {
 
     background-color: #F6F6F6;
-    margin: 40px 0 40px 0;
+    margin: 40px 0 0 0;
+
+
+    &__box {
+        padding-bottom: 40px;
+    }
 
     &__title {
         padding: 40px 0 0 20px;
@@ -168,6 +172,7 @@
 
     .fonctionnement {
         margin-bottom: 60px;
+
         h2 {
             margin-left: 10%;
         }
@@ -184,19 +189,19 @@
 
     }
 
-    .restaurants{
+    .restaurants {
 
-        &__title{
+        &__title {
             margin-left: 8%;
         }
 
-        &__box{
-            display:flex;
+        &__box {
+            display: flex;
             justify-content: center;
             flex-wrap: wrap;
         }
 
-        &__card{
+        &__card {
             width: 43%;
         }
     }

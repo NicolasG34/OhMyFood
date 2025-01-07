@@ -1,18 +1,29 @@
-.header { 
+.header {
     display: grid;
-   
-     &__logo{
+
+    &__logo {
         box-shadow: 0px 4px 4px 0px #00000040;
         display: flex;
         justify-content: center;
 
-       &--image{
+        &--image {
             width: 50%;
-            margin:20px 0 20px 0;
+            margin: 20px 0 20px 0;
+        }
+
+        &--arrow {
+            position: relative;
+
+            &--placement {
+                position: absolute;
+                left: 5%;
+                top: 3%;
+                font-size: 18px;
             }
+        }
     }
 
-    &__location{
+    &__location {
         background-color: #EAEAEA;
         width: 100%;
         display: flex;
@@ -20,17 +31,14 @@
         box-shadow: 0px 4px 4px 0px #00000040;
 
 
-        &--h2{
-            font-family:"roboto";
+        &--h2 {
+            font-family: "roboto";
             font-size: 16px;
         }
 
-        &--dot{
+        &--dot {
             margin: 15px 10px 15px 0;
         }
-        
+
     }
 }
-
-
-
