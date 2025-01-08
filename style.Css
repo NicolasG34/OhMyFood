@@ -308,7 +308,7 @@ body a:hover {
 }
 .menu__button--text {
   display: flex;
-  width: 65%;
+  width: 45%;
   justify-content: center;
 }
 .menu__title {
@@ -320,8 +320,8 @@ body a:hover {
 }
 .menu__line {
   border-top: 3px solid #99E2D0;
-  width: 10%;
-  margin-right: 310px;
+  width: 40px;
+  margin-left: 15px;
 }
 .menu__header {
   padding: 40px 0px 20px;
@@ -332,15 +332,11 @@ body a:hover {
   font-family: "Shrikhand", serif;
   font-size: 28px;
 }
-.menu__header--heart--empty {
-  font-size: 22px;
-  padding: 10px 0 0 0px;
-}
-.menu__header--heart--full {
+.menu__header i {
   position: absolute;
-  right: 20px;
-  top: 51px;
-  font-size: 20px;
+  right: 55px;
+  top: 45px;
+  font-size: 25px;
 }
 .menu__plats {
   display: flex;
@@ -358,18 +354,33 @@ body a:hover {
 }
 .menu__plats--box--content--title {
   margin: 0;
-  padding: 10px 0 0 10px;
+  padding: 15px 0 0 10px;
   font-size: 15px;
   font-weight: 500;
 }
 .menu__plats--box--content--subtitle {
   margin: 0;
-  padding: 10px 0 0 10px;
+  padding: 3px 0 0 10px;
   font-size: 13px;
   font-weight: 300;
 }
-.menu__plats--box--content--price {
+.menu__plats--box--price {
+  display: flex;
+}
+.menu__plats--box--price p {
   padding: 20px 15px 0 0;
+}
+.menu__plats--box--price--coche {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 15px 15px 0px;
+  background-color: #99E2D0;
+}
+.menu__plats--box--price--coche--check {
+  color: white;
+  font-size: 30px;
+  transition: all 200ms ease-in-out;
 }
 
 /*# sourceMappingURL=style.css.map */
