@@ -68,6 +68,7 @@
         width: 100%;
         align-items: center;
 
+
         &--box {
             border-radius: 15px;
             background-color: white;
@@ -75,6 +76,10 @@
             margin: 0px 0 15px 0;
             display: flex;
             justify-content: space-between;
+            animation: apparition 1.25s;
+            transform-origin: 100% 35%;
+    
+
 
             &--content {
 
@@ -95,25 +100,34 @@
             }
 
             &--price {
-                
-                display: flex;
 
-                p{
+                display: grid;
+                grid-template-columns: 0px 40PX;
+
+                &:hover {
+                    grid-template-columns: 40px 70PX;
+                }
+
+                p {
                     padding: 20px 15px 0 0;
                 }
 
                 &--coche {
-                    &--check {
-                        color: white;
-                        font-size: 30px;
-                        transition: all 200ms ease-in-out;
-                    }
-
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     border-radius: 0px 15px 15px 0px;
                     background-color: variables.$light-green;
+                    opacity: 0;
+
+                    &:hover {
+                        opacity: 1;
+                    }
+
+                    &--check {
+                        color: white;
+                        font-size: 30px;
+                    }
                 }
             }
         }
