@@ -25,58 +25,20 @@
 @keyframes apparition {
         0% {
             transform: scale(0);
+            opacity: 0;
         }
         100% {
             transform: scale(1);
+            opacity: 1;
         }
     }
 
-@keyframes cochein{
-    0% {
-        opacity: 0;
-    }
-
-    60%{
-        opacity: 0.6;
-    }
-    100%{
-        opacity: 1;
-    }
-}
-
-@keyframes cocheout{
-    from {
-        opacity: 1;
-    }
-    to{
-        opacity: 0;
-    }
-}
-
-@keyframes pricenocoche{
-    from {
-        grid-template-columns: 0 40px;
-    }
-    to{
-        grid-template-columns: 40px 70px;
-    }
-}
-
-@keyframes pricecoche{
-    from {
-        grid-template-columns: 40px 70px;
-    }
-    to{
-        grid-template-columns: 0 40px;
-    }
-}
-
 @keyframes resize{
     0%{
-        grid-template-columns: 1fr 1fr 0px;
+        grid-template-columns: 7fr 1fr 0px;
     }
-    
+
     100%{
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 7fr 1fr 1fr;
     }
 }

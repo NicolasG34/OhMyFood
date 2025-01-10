@@ -74,52 +74,19 @@ body a:hover {
 @keyframes apparition {
   0% {
     transform: scale(0);
+    opacity: 0;
   }
   100% {
     transform: scale(1);
-  }
-}
-@keyframes cochein {
-  0% {
-    opacity: 0;
-  }
-  60% {
-    opacity: 0.6;
-  }
-  100% {
     opacity: 1;
-  }
-}
-@keyframes cocheout {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-@keyframes pricenocoche {
-  from {
-    grid-template-columns: 0 40px;
-  }
-  to {
-    grid-template-columns: 40px 70px;
-  }
-}
-@keyframes pricecoche {
-  from {
-    grid-template-columns: 40px 70px;
-  }
-  to {
-    grid-template-columns: 0 40px;
   }
 }
 @keyframes resize {
   0% {
-    grid-template-columns: 1fr 1fr 0px;
+    grid-template-columns: 7fr 1fr 0px;
   }
   100% {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 7fr 1fr 1fr;
   }
 }
 .footer {
@@ -352,6 +319,24 @@ body a:hover {
   top: -50px;
   margin-bottom: -50px;
 }
+.menu__starter {
+  animation: apparition 1.25s;
+  transform-origin: 100% 35%;
+}
+.menu__main {
+  animation: apparition 1.25s;
+  transform-origin: 100% 35%;
+  animation-delay: 0.75s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+.menu__dessert {
+  animation: apparition 1.25s;
+  transform-origin: 100% 35%;
+  animation-delay: 1.25s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
 .menu__button {
   display: flex;
   justify-content: center;
@@ -402,11 +387,14 @@ body a:hover {
   margin: 0px 0 15px 0;
   display: grid;
   justify-content: space-between;
-  grid-template-columns: 1fr 1fr 0px;
+  grid-template-columns: 7fr 1fr 0;
   transition: all ease-in-out 1s;
 }
 .menu__plats--box:hover {
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 7fr 1fr 1fr;
+}
+.menu__plats--box--content {
+  text-overflow: ellipsis;
 }
 .menu__plats--box--content--title {
   margin: 0;
@@ -420,13 +408,6 @@ body a:hover {
   font-size: 13px;
   font-weight: 300;
 }
-.menu__plats--box--price {
-  display: grid;
-  grid-template-columns: 0px 40PX;
-}
-.menu__plats--box--price:hover {
-  grid-template-columns: 40px 70PX;
-}
 .menu__plats--box--price p {
   padding: 20px 15px 0 0;
 }
@@ -438,9 +419,6 @@ body a:hover {
   background-color: #99E2D0;
   opacity: 0;
 }
-.menu__plats--box--price--coche:hover {
-  opacity: 1;
-}
 .menu__plats--box--price--coche--check {
   color: white;
   font-size: 30px;
@@ -451,6 +429,7 @@ body a:hover {
   align-items: center;
   border-radius: 0px 15px 15px 0px;
   background-color: #99E2D0;
+  width: 100px;
 }
 .menu__plats--box--coche--check {
   color: white;
