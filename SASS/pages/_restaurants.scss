@@ -74,10 +74,15 @@
             background-color: white;
             width: 90%;
             margin: 0px 0 15px 0;
-            display: flex;
+            display: grid;
             justify-content: space-between;
-            animation: apparition 1.25s;
-            transform-origin: 100% 35%;
+           // animation: apparition 1.25s;
+            //transform-origin: 100% 35%;
+            grid-template-columns: 1fr 1fr 0px;
+            transition: all ease-in-out 1s;
+            &:hover{
+                grid-template-columns: 1fr 1fr 1fr;
+            }
     
 
 
@@ -129,6 +134,21 @@
                         font-size: 30px;
                     }
                 }
+            }
+
+            &--coche {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 0px 15px 15px 0px;
+                background-color: variables.$light-green;
+
+                
+                &--check {
+                    color: white;
+                    font-size: 30px;
+                }
+                
             }
         }
     }

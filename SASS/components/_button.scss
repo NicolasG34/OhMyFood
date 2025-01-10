@@ -70,3 +70,13 @@
         grid-template-columns: 0 40px;
     }
 }
+
+@keyframes resize{
+    0%{
+        grid-template-columns: 1fr 1fr 0px;
+    }
+    
+    100%{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
