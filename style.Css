@@ -306,6 +306,20 @@ body a:hover {
     width: 43%;
   }
 }
+@media screen and (min-width: 1250px) {
+  .menu__header i {
+    right: 400px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .menu__header i {
+    font-size: 21px;
+    right: 47px;
+  }
+  .menu__header--title {
+    font-size: 21px;
+  }
+}
 .backgroundtop__image {
   object-fit: cover;
   height: 275px;
@@ -366,7 +380,7 @@ body a:hover {
 }
 .menu__header--title {
   font-family: "Shrikhand", serif;
-  font-size: 28px;
+  font-size: 26px;
 }
 .menu__header i {
   position: absolute;
@@ -434,6 +448,70 @@ body a:hover {
 .menu__plats--box--coche--check {
   color: white;
   font-size: 30px;
+}
+
+@media screen and (min-width: 950px) {
+  .backgroundtop__image {
+    height: 300px;
+  }
+  .menu {
+    width: 80%;
+    margin-left: 10%;
+  }
+  .menu__starter {
+    width: 70%;
+    margin-left: 15%;
+  }
+  .menu__main {
+    width: 70%;
+    margin-left: 15%;
+  }
+  .menu__dessert {
+    width: 70%;
+    margin-left: 15%;
+  }
+  .menu__button--text {
+    width: 20%;
+  }
+  .menu__title {
+    font-size: 14px;
+  }
+  .menu__header {
+    padding-left: 75px;
+  }
+  .menu__header--title {
+    font-size: 25px;
+  }
+  .menu__header i {
+    right: 260px;
+  }
+  .menu__line {
+    width: 35px;
+  }
+}
+@media screen and (min-width: 1250px) {
+  .menu__header i {
+    right: 400px;
+  }
+}
+@media all and (min-width: 500px) and (max-width: 700px) {
+  .menu__header i {
+    right: 120px;
+  }
+}
+@media all and (min-width: 700px) and (max-width: 950px) {
+  .menu__header i {
+    right: 220px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .menu__header i {
+    font-size: 21px;
+    right: 47px;
+  }
+  .menu__header--title {
+    font-size: 21px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

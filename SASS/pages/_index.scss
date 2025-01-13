@@ -208,3 +208,29 @@
 
 
 }
+
+@media screen and (min-width: 1250px) {
+    .menu{
+        &__header{
+
+            i{
+                right: 400px;
+            }
+        }
+}
+}
+
+@media screen and (max-width: 400px) {
+    .menu{
+        &__header{
+
+            i{
+                font-size: 21px;
+                right: 47px;
+            }
+            &--title{
+                font-size: 21px;
+            }
+        }
+    }
+}

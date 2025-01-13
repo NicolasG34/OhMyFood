@@ -69,7 +69,7 @@
 
         &--title {
             font-family: "Shrikhand", serif;
-            font-size: 28px;
+            font-size: 26px;
         }
 
 
@@ -175,4 +175,107 @@
         }
     }
 
+}
+
+@media screen and (min-width: 950px) {
+
+    .backgroundtop{
+        &__image{
+            height: 300px;
+        }
+    }
+
+    .menu{
+        width: 80%;
+        margin-left: 10%;
+
+        &__starter{
+            width: 70%;
+            margin-left: 15%;
+        }
+
+        &__main{
+            width: 70%;
+            margin-left: 15%;
+        }
+
+        &__dessert{
+            width: 70%;
+            margin-left: 15%;
+        }
+
+        &__button{
+            &--text{
+                width: 20%;
+            }
+        }
+
+        &__title{
+            font-size: 14px;
+        }
+
+        &__header{
+            padding-left: 75px;
+
+            &--title{
+                font-size: 25px;
+            }
+
+            i{
+                right:260px;
+            }
+        }
+
+        &__line{
+            width: 35px;
+        }
+    }
+}
+
+@media screen and (min-width: 1250px) {
+    .menu{
+        &__header{
+
+            i{
+                right: 400px;
+            }
+        }
+}
+}
+
+@media all and (min-width: 500px) and (max-width: 700px){
+    .menu{
+        &__header{
+
+            i{
+                right: 120px;
+            }
+        }
+}
+}
+
+@media all and (min-width: 700px) and (max-width: 950px){
+    .menu{
+        &__header{
+
+            i{
+                right: 220px;
+            }
+        }
+}
+}
+
+@media screen and (max-width: 400px) {
+    .menu{
+        &__header{
+
+            i{
+                font-size: 21px;
+                right: 47px;
+            }
+            &--title{
+                font-size: 21px;
+            }
+        }
+    }
 }
