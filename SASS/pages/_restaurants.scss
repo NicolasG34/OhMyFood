@@ -95,20 +95,24 @@
             background-color: white;
             width: 90%;
             margin: 0px 0 15px 0;
-            display: grid;
+            display: flex;
             justify-content: space-between;
-            grid-template-columns: 7fr 1fr 0;
             transition: all ease-in-out 1s;
+            overflow: hidden;
 
-            &:hover {
-                grid-template-columns: 7fr 1fr 1fr;
-               // animation-name: resize ;
+
+            &:hover &--price--coche {
+                margin-right: 0;
             }
 
 
 
             &--content {
+
                 text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+
                 &--title {
                     margin: 0;
                     padding: 15px 0 0 10px;
@@ -127,8 +131,8 @@
 
             &--price {
 
-                //display: grid;
-                //grid-template-columns: 0px 40PX;
+                display: flex;
+                overflow: hidden;
 
                 &:hover {
                     //grid-template-columns: 40px 70PX;
@@ -144,7 +148,9 @@
                     align-items: center;
                     border-radius: 0px 15px 15px 0px;
                     background-color: variables.$light-green;
-                    opacity: 0;
+                    margin-right: -100px;
+                    width: 100px;
+                    transition: all 0.6s;
 
                     &:hover {
                         //opacity: 1;
@@ -179,101 +185,102 @@
 
 @media screen and (min-width: 950px) {
 
-    .backgroundtop{
-        &__image{
+    .backgroundtop {
+        &__image {
             height: 300px;
         }
     }
 
-    .menu{
+    .menu {
         width: 80%;
         margin-left: 10%;
 
-        &__starter{
+        &__starter {
             width: 70%;
             margin-left: 15%;
         }
 
-        &__main{
+        &__main {
             width: 70%;
             margin-left: 15%;
         }
 
-        &__dessert{
+        &__dessert {
             width: 70%;
             margin-left: 15%;
         }
 
-        &__button{
-            &--text{
+        &__button {
+            &--text {
                 width: 20%;
             }
         }
 
-        &__title{
+        &__title {
             font-size: 14px;
         }
 
-        &__header{
+        &__header {
             padding-left: 75px;
 
-            &--title{
+            &--title {
                 font-size: 25px;
             }
 
-            i{
-                right:260px;
+            i {
+                right: 260px;
             }
         }
 
-        &__line{
+        &__line {
             width: 35px;
         }
     }
 }
 
 @media screen and (min-width: 1250px) {
-    .menu{
-        &__header{
+    .menu {
+        &__header {
 
-            i{
+            i {
                 right: 400px;
             }
         }
-}
+    }
 }
 
-@media all and (min-width: 500px) and (max-width: 700px){
-    .menu{
-        &__header{
+@media all and (min-width: 500px) and (max-width: 700px) {
+    .menu {
+        &__header {
 
-            i{
+            i {
                 right: 120px;
             }
         }
-}
+    }
 }
 
-@media all and (min-width: 700px) and (max-width: 950px){
-    .menu{
-        &__header{
+@media all and (min-width: 700px) and (max-width: 950px) {
+    .menu {
+        &__header {
 
-            i{
+            i {
                 right: 220px;
             }
         }
-}
+    }
 }
 
 @media screen and (max-width: 400px) {
-    .menu{
-        &__header{
+    .menu {
+        &__header {
 
-            i{
+            i {
                 font-size: 21px;
                 right: 47px;
             }
-            &--title{
+
+            &--title {
                 font-size: 21px;
             }
         }
