@@ -89,6 +89,14 @@ body a:hover {
     grid-template-columns: 7fr 1fr 1fr;
   }
 }
+@keyframes check {
+  0% {
+    margin-right: -100px;
+  }
+  100% {
+    margin-right: 0;
+  }
+}
 .footer {
   padding: 10px 0 30px 0;
   background-color: #353535;
@@ -100,11 +108,17 @@ body a:hover {
   margin-left: 20px;
   gap: 10px;
 }
+.footer__text--withoutlogo {
+  display: flex;
+  gap: 25px;
+  padding-top: 15px;
+}
 .footer__text--logo {
   font-family: "Shrikhand", serif;
   color: #FFFFFF;
   margin-left: 20px;
   font-size: larger;
+  padding-top: 10px;
 }
 
 @media screen and (min-width: 900px) {
@@ -440,6 +454,7 @@ body a:hover {
   margin-right: -100px;
   width: 100px;
   transition: all 0.6s;
+  animation: check;
 }
 .menu__plats--box--price--coche--check {
   color: white;
