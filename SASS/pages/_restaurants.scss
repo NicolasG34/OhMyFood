@@ -108,9 +108,7 @@
 
 
             &--content {
-
-                text-overflow: ellipsis;
-                white-space: nowrap;
+                padding-right: 5px;
                 overflow: hidden;
 
                 &--title {
@@ -118,6 +116,9 @@
                     padding: 15px 0 0 10px;
                     font-size: 15px;
                     font-weight: 500;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
                 }
 
                 &--subtitle {
@@ -125,6 +126,9 @@
                     padding: 3px 0 0 10px;
                     font-size: 13px;
                     font-weight: 300;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
                 }
 
             }

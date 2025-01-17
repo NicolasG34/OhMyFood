@@ -112,6 +112,7 @@ body a:hover {
   display: flex;
   gap: 25px;
   padding-top: 15px;
+  flex-wrap: wrap;
 }
 .footer__text--logo {
   font-family: "Shrikhand", serif;
@@ -422,8 +423,7 @@ body a:hover {
   margin-right: 0;
 }
 .menu__plats--box--content {
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  padding-right: 5px;
   overflow: hidden;
 }
 .menu__plats--box--content--title {
@@ -431,12 +431,18 @@ body a:hover {
   padding: 15px 0 0 10px;
   font-size: 15px;
   font-weight: 500;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .menu__plats--box--content--subtitle {
   margin: 0;
   padding: 3px 0 0 10px;
   font-size: 13px;
   font-weight: 300;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .menu__plats--box--price {
   display: flex;
