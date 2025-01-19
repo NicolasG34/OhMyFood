@@ -81,14 +81,6 @@ body a:hover {
     opacity: 1;
   }
 }
-@keyframes resize {
-  0% {
-    grid-template-columns: 7fr 1fr 0px;
-  }
-  100% {
-    grid-template-columns: 7fr 1fr 1fr;
-  }
-}
 @keyframes check {
   0% {
     margin-right: -100px;
@@ -110,9 +102,9 @@ body a:hover {
 }
 .footer__text--withoutlogo {
   display: flex;
-  gap: 25px;
-  padding-top: 15px;
+  gap: 5px;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 .footer__text--logo {
   font-family: "Shrikhand", serif;
@@ -129,6 +121,13 @@ body a:hover {
     padding: 50px 50px 0;
     justify-content: right;
     gap: 15px;
+  }
+  .footer__text--withoutlogo {
+    display: flex;
+    gap: 25px;
+    padding-top: 15px;
+    flex-wrap: wrap;
+    flex-direction: unset;
   }
 }
 @keyframes loader {
@@ -424,7 +423,6 @@ body a:hover {
 }
 .menu__plats--box--content {
   padding-right: 5px;
-  overflow: hidden;
 }
 .menu__plats--box--content--title {
   margin: 0;
@@ -463,18 +461,6 @@ body a:hover {
   animation: check;
 }
 .menu__plats--box--price--coche--check {
-  color: white;
-  font-size: 30px;
-}
-.menu__plats--box--coche {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 0px 15px 15px 0px;
-  background-color: #99E2D0;
-  width: 100px;
-}
-.menu__plats--box--coche--check {
   color: white;
   font-size: 30px;
 }

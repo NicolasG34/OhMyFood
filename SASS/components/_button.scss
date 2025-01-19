@@ -34,16 +34,6 @@
         }
     }
 
-@keyframes resize{
-    0%{
-        grid-template-columns: 7fr 1fr 0px;
-    }
-
-    100%{
-        grid-template-columns: 7fr 1fr 1fr;
-    }
-}
-
 @keyframes check{
     0%{
         margin-right: -100px;
