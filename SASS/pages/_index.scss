@@ -29,15 +29,14 @@
 
 .fonctionnement {
 
-    h2 {
-        margin: 50px 0 20px 20px;
-    }
+    padding-left: 20px;
+    margin: 50px 0 20px 0px;
 
     &__steps {
         display: grid;
-        justify-content: center;
-        grid-template-columns: 80%;
+        grid-template-columns: 95%;
         grid-template-rows: 90px 90px 90px;
+        padding-left: 10px;
 
         i {
             width: 25%;
@@ -90,29 +89,23 @@
     background-color: #F6F6F6;
     margin: 40px 0 0 0;
 
-
-    &__box {
-        padding-bottom: 40px;
-    }
-
-    &__title {
-        padding: 40px 0 0 20px;
+    &__content {
+        padding: 40px 20px 40px 20px;
     }
 
     &__card {
         text-decoration: none;
         color: #101010;
         display: flex;
-        justify-content: center;
         position: relative;
 
         &--link {
-            width: 90%;
             border: 2px solid transparent;
             border-radius: 15px;
             margin-bottom: 20px;
             background-color: #FFFFFF;
             position: relative;
+            width: 100%;
 
             &--new {
                 position: absolute;
@@ -172,19 +165,20 @@
 
     .fonctionnement {
         margin-bottom: 60px;
-
-        h2 {
-            margin-left: 10%;
-        }
+        padding: 0px 55px 0px 55px;
 
         &__steps {
             display: flex;
             gap: 25px;
 
             &--box {
-                width: 25%;
+                width: 100%;
                 height: 70px;
             }
+        }
+
+        h3 {
+            font-size: 15px;
         }
 
     }
@@ -199,6 +193,8 @@
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
+            column-gap: 60px;
+            row-gap: 20px;
         }
 
         &__card {
@@ -210,25 +206,26 @@
 }
 
 @media screen and (min-width: 1250px) {
-    .menu{
-        &__header{
+    .menu {
+        &__header {
 
-            i{
+            i {
                 right: 400px;
             }
         }
-}
+    }
 }
 
 @media screen and (max-width: 400px) {
-    .menu{
-        &__header{
+    .menu {
+        &__header {
 
-            i{
+            i {
                 font-size: 21px;
                 right: 47px;
             }
-            &--title{
+
+            &--title {
                 font-size: 21px;
             }
         }
