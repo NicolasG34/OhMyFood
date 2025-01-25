@@ -29,14 +29,13 @@
 
 .fonctionnement {
 
-    padding-left: 20px;
-    margin: 50px 0 20px 0px;
+    padding: 40px 8% 70px;
 
     &__steps {
         display: grid;
-        grid-template-columns: 95%;
+        grid-template-columns: 100%;
         grid-template-rows: 90px 90px 90px;
-        padding-left: 10px;
+        
 
         i {
             width: 25%;
@@ -87,12 +86,8 @@
 .restaurants {
 
     background-color: #F6F6F6;
-    margin: 40px 0 0 0;
-
-    &__content {
-        padding: 40px 20px 40px 20px;
-    }
-
+    padding: 50px 8% 50px;
+    
     &__card {
         text-decoration: none;
         color: #101010;
@@ -100,7 +95,6 @@
         position: relative;
 
         &--link {
-            border: 2px solid transparent;
             border-radius: 15px;
             margin-bottom: 20px;
             background-color: #FFFFFF;
@@ -165,7 +159,7 @@
 
     .fonctionnement {
         margin-bottom: 60px;
-        padding: 0px 55px 0px 55px;
+        padding: 20px 100px 0px 100px;
 
         &__steps {
             display: flex;
@@ -185,20 +179,16 @@
 
     .restaurants {
 
-        &__title {
-            margin-left: 8%;
-        }
-
+        padding: 20px 100px 0px 100px;
         &__box {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             flex-wrap: wrap;
-            column-gap: 60px;
             row-gap: 20px;
         }
 
         &__card {
-            width: 43%;
+            width: 45%;
         }
     }
 
